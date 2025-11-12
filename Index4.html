@@ -33,7 +33,7 @@
   <header id="home" class="bg-light py-5 text-center border-bottom">
     <div class="container">
       <h1 class="display-5 fw-bold text-success">AI Satellite Crop Prediction in Kyrgyzstan</h1>
-      <p class="lead">Combining Sentinel‑2 data and AI models to predict crop yield and support sustainable farming decisions.</p>
+      <p class="lead">Combining Sentinel-2 data and AI models to predict crop yield and support sustainable farming decisions.</p>
     </div>
   </header>
 
@@ -61,7 +61,7 @@
             <td>Wheat, Barley</td>
             <td>Convolutional Neural Network (CNN)</td>
             <td>92%</td>
-            <td><a href="#">Sentinel‑2 (2019–2024)</a></td>
+            <td><a href="#">Sentinel-2 (2019–2024)</a></td>
           </tr>
           <tr>
             <td><img src="issyk.jpg" alt="Issyk-Kul" class="img-fluid rounded" width="200"></td>
@@ -87,14 +87,24 @@
   <!-- VIDEO SECTION -->
   <section id="video" class="py-5 bg-light border-top">
     <div class="container text-center">
-      <h2 class="text-success mb-4">Project Overview Video</h2>
-      <p class="mb-4">Watch the short video explaining how our AI model predicts crop yield across Kyrgyzstan.</p>
+      <h2 class="text-success mb-4">Project Overview Videos</h2>
+      <p class="mb-4">Watch the short videos explaining how our AI model predicts crop yield across Kyrgyzstan.</p>
 
-      <div class="ratio ratio-16x9 shadow-sm rounded">
+      <!-- Local Video -->
+      <div class="ratio ratio-16x9 shadow-sm rounded mb-5">
         <video controls poster="poster.jpg">
           <source src="Kyrgyzstan.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+      </div>
+
+      <!-- YouTube Embedded Video -->
+      <div class="ratio ratio-16x9 shadow-sm rounded">
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="AI Satellite Crop Prediction YouTube Video"
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
   </section>
@@ -108,7 +118,7 @@
     </div>
   </footer>
 
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
