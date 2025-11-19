@@ -1,107 +1,71 @@
-/* Reset default margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Smooth scroll added */
+html {
+  scroll-behavior: smooth; /* ✨ New */
 }
 
-/* Main body layout and base style */
-body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  font-size: 17px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #f1f8f4; /* light green background */
-  color: #2e3d29; /* dark green text */
+/* HERO SECTION updates */
+.hero-section {             /* ✨ New section styling */
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #d8f3dc, #f1f8f4); /* ✨ Added gradient */
 }
 
-/* Header section */
-header {
-  background-color: #d8f3dc; /* soft mint green */
-  padding: 25px;
-  text-align: center;
-  border-bottom: 2px solid #95d5b2; /* green border line */
-}
-
-/* Main title */
-h1 {
-  font-family: "Georgia", serif;
-  font-size: 2rem;
-  color: #1b4332; /* deep forest green */
-}
-
-/* Navigation bar */
-nav {
-  background-color: #2d6a4f; /* natural green tone */
+.hero-badge {               /* ✨ New badge in hero */
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: #2d6a4f;
   color: #edf6f9;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  padding: 12px;
-  letter-spacing: 1px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
-/* Main content section */
-main {
-  padding: 30px;
-  flex: 1;
-  background-color: #ffffff; /* white background for readability */
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* soft shadow */
+.hero-subtitle {            /* ✨ Improved spacing */
+  max-width: 720px;
+  margin: 0.75rem auto 0;
 }
 
-/* Footer section */
-footer {
-  background-color: #1b4332; /* dark green footer */
-  font-size: 0.9em;
-  font-style: italic;
-  color: #d8f3dc; /* light green text */
-  text-align: center;
-  margin-top: auto;
-  padding: 15px;
-  border-top: 2px solid #52b788; /* accent line */
-}
-/* --- Table Styles --- */
-.logoImg {
-  width: 200px;
-  border-radius: 6px;
+/* Navbar hover update */
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  text-decoration: underline;        /* ✨ Added underline contrast */
+  text-underline-offset: 4px;        /* ✨ Cleaner spacing */
 }
 
-.logoDiv {
-  text-align: center;
+/* Zebra striping for table */
+tbody tr:nth-child(even) {
+  background-color: #f8fff9; /* ✨ New */
 }
 
-table, td, th {
-  border: 1px solid #95d5b2; /* light green border */
-  border-spacing: 0;
+/* Hover highlight */
+.table-hover tbody tr:hover {
+  background-color: #f4fbf6; /* ✨ New */
 }
 
-table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
+/* Image hover effect */
+table img {
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* ✨ New */
 }
 
-th {
-  font-family: Georgia, serif;
-  background-color: #d8f3dc; /* mint header background */
-  color: #1b4332;
-  text-align: left;
+table img:hover {
+  transform: scale(1.02);             /* ✨ New */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-th, td {
-  padding: 12px 20px;
+/* Softer dataset buttons */
+.btn-outline-success {
+  border-radius: 999px; /* ✨ New */
 }
 
-a:link, a:visited {
-  color: #2d6a4f;
-  text-decoration: none;
+/* Rounded iframe video */
+#video .ratio {
+  border-radius: 12px; /* ✨ New */
+  overflow: hidden;
 }
 
-a:hover {
-  color: #40916c;
-  text-decoration: underline;
+/* Subtle background improvement */
+#video {
+  background: #f6fbf8; /* ✨ New */
 }
